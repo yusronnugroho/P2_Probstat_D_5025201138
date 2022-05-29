@@ -37,3 +37,21 @@ t.test(x, y, mu = 0, alternative = "two.sided", var.equal = TRUE)
 
 Hasilnya :
 <img width="532" alt="Jepretan Layar 2022-05-29 pukul 22 35 28" src="https://user-images.githubusercontent.com/87480529/170877848-a506b37e-6401-44a8-9137-7b9e93d57e05.png">
+
+2. Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
+
+a. Apakah Anda setuju dengan klaim tersebut?
+```R
+Setuju
+```
+
+b. Jelaskan maksud dari output yang dihasilkan!
+```R
+zsum.test(mean.x=23500, sigma.x = 3900, n.x = 100, alternative = "greater", mu = 20000, conf.level = 0.95) 
+```
+<img width="610" alt="Jepretan Layar 2022-05-29 pukul 22 58 41" src="https://user-images.githubusercontent.com/87480529/170879106-567a59f8-e7fa-4336-9fde-21254fbba7d0.png">
+
+c.  Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
+<img width="387" alt="Jepretan Layar 2022-05-29 pukul 23 02 49" src="https://user-images.githubusercontent.com/87480529/170879316-c7a449d3-b581-4a60-87cd-1065be3e090a.png">
+Kesimpulannya adalah bahwa mobil dikemudikan rata-rata lebih dari 20.000 km/tahun.
+
